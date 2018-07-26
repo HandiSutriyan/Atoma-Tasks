@@ -1,0 +1,1 @@
+SELECT count(if((love.product_id = products.product_id),love.user_id,null))AS 'jumlah', products.name from love,products where products.product_id=love.product_id GROUP by love.product_id
